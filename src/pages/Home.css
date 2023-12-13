@@ -1,0 +1,40 @@
+.main-info{
+    margin: auto;
+    width: 50%;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+
+.title {
+    padding-bottom: 1rem;
+    animation: fadeIn 1s 0s both;
+}
+
+.about-me {
+    display: flex; 
+    justify-content: start;
+    animation: fadeIn 1s 0.5s both;
+    
+}
+
+.section-header{
+    white-space: nowrap;
+    padding-right: 1rem;
+}
+
+p{
+    text-align: justify;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
