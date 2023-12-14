@@ -27,12 +27,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 
 .navitem .tooltiptext {
-
     width: 100px;
     background-color: #1b1b1b;
     color: azure;

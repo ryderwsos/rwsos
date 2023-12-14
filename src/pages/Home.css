@@ -1,8 +1,10 @@
 .main-info{
+    height: 100vh;
     margin: auto;
     width: 50%;
-    padding-top: 5rem;
+    padding-top: 100%;
     text-align: center;
+    font-size: x-large;
 }
 
 
@@ -37,4 +39,8 @@ p{
         transform: translateY(0);
     }
   }
-  
+
+.icon{
+    height: 5rem;
+    width: 5rem;
+}
