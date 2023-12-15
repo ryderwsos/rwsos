@@ -43,11 +43,12 @@ p{
     width: 4rem;
     animation: fade 1.25s 1s both;
     animation-play-state: initial;
-    transition: all 0.75s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .socialItem:hover{
     rotate: 360deg;
+    transform: rotateY(360deg);
 }
 
 @keyframes fadeIn {
