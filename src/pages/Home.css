@@ -1,15 +1,17 @@
 .main-info{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     margin: auto;
     width: 50%;
-    padding-top: 100%;
-    text-align: center;
     font-size: x-large;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .title {
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     animation: fadeIn 1s 0s both;
 }
 
@@ -17,7 +19,7 @@
     display: flex; 
     justify-content: start;
     animation: fadeIn 1s 0.5s both;
-    
+    padding-bottom: 3rem;
 }
 
 .section-header{
@@ -29,6 +31,27 @@ p{
     text-align: justify;
 }
 
+.icon{
+    width: 100%;
+    block-size: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialItem{
+    width: 4rem;
+    animation: fade 1.25s 1s both;
+    animation-play-state: initial;
+    transition: all 0.75s ease-in-out;
+}
+
+.socialItem:hover{
+    rotate: 360deg;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -38,9 +61,23 @@ p{
         opacity: 1;
         transform: translateY(0);
     }
-  }
-
-.icon{
-    height: 5rem;
-    width: 5rem;
 }
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* @keyframes spin-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+} */
