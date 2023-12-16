@@ -1,77 +1,60 @@
-$papers: 4;
-$colors:( 
-  "one":#ffffff,
-  "two":#dedede,
-  "three":#bdbdbd,
-  "four": #969696
-);
+.folder{
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+}
 
-$folder-content: attr(data-content);
-  
-body {
-  background-color: #1e1f26;
-  //back side of the folder
-  .folder{
-    cursor: pointer;
-    position: absolute;
-    background-color: #525252;
-    width: 200px;
-    height: 150px;
-    border-radius: 10px;
-    //folder label
-    &:before {
-      width: 55px;
-      height: 25px;
-      border-radius: 5px;
-      content: '';
-      background-color: #525252;
-      position: absolute;
-      top: -10px;
-      left: 0px;
-    }
-    //front side of the folder
-    &:after {
-      display: block;
-      width: 200px;
-      height: 150px;
-      border-radius: 10px;
-      content: $folder-content;
-      transform: skew(0deg);
-      background-color: #686868;
-      transition: all .2s;
-      font-weight: lighter;
-    }
-    
-    .paper {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-      background-color: whitesmoke;
-      width: 190px;
-      height: 140px;
-      transition: all .2s;
-      //adding bg color for each paper div
-      @each $color, $i in $colors {
-         &.#{$color} {
-             background-color: $i;
-         }	
-      }
-    }
-    
-    &:hover{
-      //adding front lapel of folder animation
-      &:after {
-        transform: skew(-20deg);
-        margin-left:25px;
-      }
-      //adding paper animation
-      @for $i from 1 through $papers {
-        .paper:nth-child(#{$i}) {
-            transform: rotate(#{$i}0deg) translate(-80px, -80px);
-        }
-      }
-    }
-  }
+.back{
+  position: relative;
+  width: 200px;
+  height: 150px;
+  background: rgb(86, 86, 86);
+  border-radius: 10px;
+}
+
+.tab{
+  position: relative;
+  width: 60px;
+  height: 40px;
+  background: rgb(86, 86, 86);
+  top: -170px;
+  border-radius: 10px;
+}
+
+p{
+  background-color: transparent;
+  display: contents;
+}
+
+.paper{
+  position: relative;
+  width: 150px;
+  height: 100px;
+  left: 25px;
+  top: -150px;
+  background: white;
+  transition: all 0.2s ease-in;
+  border-radius: 3px;
+}
+
+.front{
+  position: relative;
+  width: 200px;
+  height: 150px;
+  top:-290px;
+  background-color: rgb(102, 102, 102);
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.folder:hover .front{
+  -webkit-transform: rotateX(-30deg);
+  transform: translateY(10px) rotateX(-30deg);
+}
+
+.folder:hover .paper{
+  transform: translateY(-35px);
 }
