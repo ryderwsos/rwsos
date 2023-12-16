@@ -2,10 +2,7 @@ import { Modal } from "@mui/material"
 import { Folder } from "../components/Folder"
 import './Projects.css'
 import { useState } from "react"
-
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -68,7 +65,7 @@ export const Projects = () => {
   return (
     <>
     <div className="project-main">
-      <div className="title">
+      <div className="project-page-title">
         <h1>My Projects</h1>
       </div>
 
@@ -76,7 +73,7 @@ export const Projects = () => {
         {projects.map((props) => {
           return(
             <div className="grid-item" key={props.id}>
-              <div onClick={(e) => setModal(props)} >
+              <div onClick={() => setModal(props)} >
                 <Folder name={props.name}/>
               </div>
             </div> 
@@ -92,8 +89,8 @@ export const Projects = () => {
       >
         <Box className='modal' >
           <h1 className="project-title">{currentProject.name}</h1>
-          <p>Description: {currentProject.description}</p>
-          <button onClick={(e) => routeChange(e)}>Link to Project</button>
+          <p className="project-desc">Description: {currentProject.description}</p>
+          <button className='project-link' onClick={(e) => routeChange(e)}>Link to Project</button>
         </Box>
       </Modal>
 

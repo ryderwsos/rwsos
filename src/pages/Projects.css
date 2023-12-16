@@ -7,7 +7,7 @@
 }
 
 
-.title{
+.project-page-title{
     padding-bottom: 6rem;
 }
 
@@ -45,11 +45,11 @@
     font-weight: 150%;
 }
 
-p{
+.project-desc{
     font-size: medium;
 }
 
-button{
+.project-link{
     background-color: rgb(89, 89, 89);
     border: 2px solid grey;
 }
