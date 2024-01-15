@@ -52,6 +52,11 @@
 .project-link{
     background-color: rgb(89, 89, 89);
     border: 2px solid grey;
+    cursor: pointer;
+}
+
+.project-link:hover{
+    background: rgb(59, 59, 59);
 }
 
 @keyframes fadeIn {

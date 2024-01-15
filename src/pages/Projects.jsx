@@ -8,37 +8,23 @@ const projects = [
   {
     name: 'Spotify Duplicated Song Remover',
     url: 'https://github.com/ryderwsos/spotify_dup',
-    stack: 'sdwa, dwadaw, dwasd',
-    description: 'This is a description',
+    stack: 'Python, Tkinter, Spotify API',
+    description: 'Utlising Spotify API to return given spotify playlist, along with thoughtout algorithms to return all duplicated song in a playlist.',
     id:'0'
   },
   {
     name: 'Blinker Puzzle',
     url: 'https://github.com/ryderwsos/Blink-Detector-Puzzel',
-    stack: 'sdwa, dwadaw, dwasd',
-    description: 'Blinker Puzzle description',
+    stack: 'C, Python, OpenCV, STM32, NVIDIA Jetson',
+    description: 'Combining powerful microcontrollers of STM32 and NVIDIA Jetson to colloborate on a unique puzzle solution, involving the user blinking as a morse code.',
     id:'1'
   },
   {
     name: 'Discord Promotion Bot',
     url: 'https://github.com/ryderwsos/discord_promotion_bot',
-    stack: 'sdwa, dwadaw, dwasd',
-    description: 'djaiwdhasidhawidshgaidgbaiof',
+    stack: 'Python, BeautifulSoup Discord.py',
+    description: 'Using Discord.py API, as well as BeautifulSoup to scrape data off of merchant website, returning current promotions from choosen merchant store.',
     id:'2'
-  },
-  {
-    name: 'Discord Promotion ',
-    url: 'https://github.com/ryderwsos/discord_promotion_bot',
-    stack: 'sdwa, dwadaw, dwasd',
-    description: 'djaiwdhasidhawidshgaidgbaiof',
-    id:'3'
-  },
-  {
-    name: 'Discord Bot',
-    url: 'https://github.com/ryderwsos/discord_promotion_bot',
-    stack: 'sdwa, dwadaw, dwasd',
-    description: 'djaiwdhasidhawidshgaidgbaiof',
-    id:'4'
   },
 ]
 
